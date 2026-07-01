@@ -78,7 +78,6 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     implementation(libs.hilt.work)
-    ksp(libs.hilt.work.compiler)
 
     // WorkManager
     implementation(libs.workmanager.ktx)
