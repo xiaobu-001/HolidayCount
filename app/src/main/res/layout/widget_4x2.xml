@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_bg_rounded"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Top row: emoji + name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_widget_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎄"
+            android:textSize="32sp"
+            android:paddingEnd="10dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_widget_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圣诞节"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_widget_countdown_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还有 128 天"
+                android:textColor="#CCFFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_widget_refresh"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_popup_sync"
+            android:tint="#AAFFFFFF"
+            android:contentDescription="刷新" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF"
+        android:layout_marginVertical="10dp" />
+
+    <!-- Big number -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_widget_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="128"
+            android:textColor="#FFFFFFFF"
+            android:textSize="56sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_widget_days_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天后到来"
+            android:textColor="#CCFFFFFF"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:paddingTop="28sp" />
+    </LinearLayout>
+
+    <!-- Date & Weekday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/tv_widget_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2026年12月25日"
+            android:textColor="#CCFFFFFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_widget_weekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 星期五"
+            android:textColor="#AAFFFFFF"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

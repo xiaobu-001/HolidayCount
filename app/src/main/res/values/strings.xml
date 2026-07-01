@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HolidayCount</string>
+    <string name="widget_4x1_label">节假日倒计时 (4×1)</string>
+    <string name="widget_2x1_label">节假日倒计时 (2×1)</string>
+    <string name="widget_4x2_label">节假日倒计时 (4×2)</string>
+    <string name="widget_4x1_desc">显示下一个节假日倒计时（4×1宽型）</string>
+    <string name="widget_2x1_desc">显示下一个节假日倒计时（2×1小型）</string>
+    <string name="widget_4x2_desc">显示下一个节假日倒计时（4×2大型）</string>
+    <string name="channel_name">节假日提醒</string>
+    <string name="upcoming_tab">即将到来</string>
+    <string name="all_tab">全部事件</string>
+    <string name="expired_tab">已过期</string>
+    <string name="add_event">添加倒计时</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+</resources>

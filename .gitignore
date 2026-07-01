@@ -1,0 +1,36 @@
+# Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+
+# Build outputs
+/build
+app/build
+/captures
+
+# Native
+.externalNativeBuild
+.cxx
+
+# Generated files (keep these checked in for CI)
+# gradle/wrapper/gradle-wrapper.jar  <- needed for CI
+
+# APK/AAB outputs
+*.apk
+*.aab
+*.ap_
+
+# Log files
+*.log
+
+# local secrets
+local.properties
+keystore.jks
+*.keystore
